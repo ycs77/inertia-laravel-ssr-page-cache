@@ -19,7 +19,7 @@ Update Nginx config:
     set $vary '';
     if ($http_x_inertia = 'true') {
         set $response_ext '.json';
-        set $vary 'Accept';
+        set $vary 'X-Inertia';
     }
 
     location = / {
